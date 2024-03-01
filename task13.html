@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smalllarge</title>
+</head>
+<body>
+    <script>
+        const SmallestandLargest = (a) =>{
+    let smallest = a[0]
+    let largest = a[0]
+
+    for(let i=1 ;i<a.length;i++)
+    {
+        if(a[i]<smallest)
+        {
+                smallest = a[i]
+        }
+        else if(a[i]>largest)
+        {
+               largest =  a[i]
+        }
+    }
+    return {smallest,largest}
+
+}
+
+let a = [43,2,6,35,8,9,16,5]
+console.log(SmallestandLargest(a))
+    </script>
+</body>
+</html>
